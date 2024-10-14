@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="col-4">
+        <img src="./public/images/f1.jpg" alt="Auto Formula 1" id="f1">
+    </div>
+    <div class="container col-4">
+        <header class="head fila">
+            <h1>Formulario</h1>
+        </header> 
+        <fieldset>
+            <form action="/sendForm.js" method="post">
+                <div class="fila">
+                    <div class="col-6">12
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="edad">Edad</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="number" name="edad" id="edad" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="User">Usuario</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="text" name="user" id="user" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="passwd">Contraseña</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="password" name="passwd" id="passwd"required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-12">
+                        <legend>Carrera:</legend>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="LRSC">Redes y servicios de computo</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="radio" name="carrera" id="LRSC" value="LRSC" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="LIS">Ingeniería de software</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="radio" name="carrera" class="inline" id="LIS" value="LIS" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="LTC">Tecnologías computacionales</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="radio" name="carrera" id="LTC" value="LTC" required>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="col-6">
+                        <label for="LE">Estadística</label>
+                    </div>
+                    <div class="col-6">
+                        <input type="radio" name="carrera" id="LE" value="LE" required>
+                    </div>
+                </div>
+                <label for="semestre">Semestre:</label>
+                <select name="semestre" id="semestre">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                </select>
+                <input type="submit" value="Enviar" id="send">
+            </form>
+        </fieldset>
+        <footer class="footer fila">
+            <p>Hecho por Victor</p>
+        </footer>
+    </div>
+    <div class="col-4">
+        <img src="./public/images/dakar.jpg" alt="Auto Dakar" id="dakar">
+    </div>
+</body>
+</html>

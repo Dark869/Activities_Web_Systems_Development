@@ -1,0 +1,105 @@
+* {
+    font-family: sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../public/images/1.jpg");
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+.fila::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    color: #000;
+    border-radius: 7px;
+    padding: 3px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 29%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.head .footer {
+    text-align: center;
+}
+
+.footer {
+    justify-content: center;
+}
+
+.head {
+    justify-content: center;
+}
+
+select, option, input[type="submit"]{
+    color: #000;
+}
+
+#f1, #dakar {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+fieldset {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #00000075;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 90%;
+        float: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        max-width: 90%;
+    }
+}
