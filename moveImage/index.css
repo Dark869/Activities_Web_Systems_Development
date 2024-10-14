@@ -1,0 +1,12 @@
+#container {
+    padding: 5px;
+    margin: 5px;
+}
+
+#f1 {
+    width: 30%;
+    height: auto;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+}
