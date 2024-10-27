@@ -20,5 +20,5 @@ def mandar_post(nombre, matricula, carrera, semestre, url=URL):
         exit(1)
 
 if __name__ == '__main__':
-    html = mandar_post('Victor Emmanuel López Espejo', "S21015931", "Redes", "7")
+    html = mandar_post('Victor', "asda015931", "Redes", "7")
     print(html)
