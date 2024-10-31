@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="errors" style="display: none">
+            <b>ERRORES:</b><br />
+              <ul id="listErrors">
+              </ul>
+          </div>
+        <form action="http://localhost/das" method="POST" id="form">
+            <div>
+                <h1>Formulario</h1>
+            </div>
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <br>
+            <div>
+                <label for="curp">Curp: </label>
+                <input type="text" name="curp" id="curp" maxlength="18">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de música</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+   <div id="container" class="col-12">
+        <div class="fila">
+            <div class="col-12">
+                <header>
+                    <h1>Reproductor de música</h1>
+                </header>
+            </div>
+        </div>
+        <div class="fila" id="audioControl">
+            <div class="fila" id="textLabel">
+                <div class="col-6 labels">
+                    <p>Audio Actual: </p>
+                </div>
+                <div class="col-6 labels">
+                    <p id="audioActual">Muriendome - Duki</p>
+                </div>
+            </div>
+            <div class="col-12">
+                <audio controls id="player">
+                    <source src="public/audios/muriendome_Duki.mpeg" type="audio/ogg">
+                </audio>
+            </div>
+        </div>
+        <div class="fila" id="menuSongs">
+            <div class="col-12">
+                <ul id="ulMenu">
+                    <div class="col-12">
+                        <div class="fila optionSongs">
+                            <li id="op1" class="options">Muriendome - Duki</li>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fila optionSongs">
+                            <li id="op2" class="options">Givenchy - Duki</li>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fila optionSongs">
+                            <li id="op3" class="options">Ticket - Duki</li>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fila optionSongs">
+                            <li id="op4" class="options">Luna - Duki</li>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="fila optionSongs">
+                            <li id="op5" class="options">Y no da mas - YSY & Duki</li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="col-12">
+                <footer>
+                    <h5>Hecho por: Victor López</h5>
+                </footer>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
