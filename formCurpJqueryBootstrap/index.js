@@ -80,9 +80,9 @@ $(function() {
             withErrors = true;
             $('#jqxRating').next('.invalid-feedback').show();
             $('#jqxRating').addClass('is-invalid');
-        } else if ($('#jqxRating').jqxRating('value') <= '3') {
+        } else if ($('#jqxRating').jqxRating('value') < '3') {
             withErrors = true;
-            $('#jqxRating').next('.invalid-feedback').text('La calificación debe ser mayor a 3.');
+            $('#jqxRating').next('.invalid-feedback').text('La calificación debe ser mayor o igual a 3.');
             $('#jqxRating').addClass('is-invalid');
         } else {
             $('#jqxRating').removeClass('is-invalid').addClass('is-valid');

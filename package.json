@@ -1,0 +1,13 @@
+{
+  "name": "activities_web_systems_development",
+  "version": "1.0.0",
+  "description": "Dependecias para la implementación de sitio web para visualización de las actividades",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js",
+    "test": "nodemon server/app.js"
+  },
+  "author": "Victor Emmanuel López Espejo",
+  "license": "ISC"
+}
